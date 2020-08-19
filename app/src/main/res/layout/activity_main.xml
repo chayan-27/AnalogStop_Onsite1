@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <com.example.analogstop.Watch
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/watch"
+
+        android:layout_alignParentBottom="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/linear"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/roundbtn"
+            android:id="@+id/one"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:id="@+id/two"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/roundbtn"
+            android:text="pause"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/three"
+            android:visibility="gone"
+            android:background="@drawable/roundbtn"
+            android:text="reset"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
